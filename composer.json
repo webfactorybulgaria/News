@@ -9,6 +9,7 @@
         }
     ],
     "require": {
+        "roumen/feed": "~2.10",
         "webfactorybulgaria/core": "~4.0.0"
     },
     "autoload": {
