@@ -10,7 +10,6 @@ class FormRequest extends AbstractFormRequest
     {
         return [
             'date'    => 'required|date',
-            'image'   => 'image|max:2000',
             '*.title' => 'max:255',
             '*.slug'  => 'alpha_dash|max:255',
         ];

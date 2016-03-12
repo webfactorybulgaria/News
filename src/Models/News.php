@@ -44,15 +44,6 @@ class News extends Base
     protected $appends = ['status', 'title', 'thumb'];
 
     /**
-     * Columns that are file.
-     *
-     * @var array
-     */
-    public $attachments = [
-        'image',
-    ];
-
-    /**
      * A news has many galleries.
      *
      * @return MorphToMany
