@@ -16,7 +16,7 @@ class PublicController extends BasePublicController
     public function __construct(NewsInterface $news, Feed $feed)
     {
         $this->feed = $feed;
-        parent::__construct($news);
+        parent::__construct($news, 'news');
     }
 
     /**
