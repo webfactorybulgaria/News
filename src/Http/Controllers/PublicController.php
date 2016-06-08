@@ -49,7 +49,7 @@ class PublicController extends BasePublicController
             $feed->setCache(60, 'typicmsNewsFeed');
         }
         if (!$feed->isCached()) {
-            $models = $this->repository->latest(10, ['translations']);
+            $models = $this->repository->latest(10, []);
 
             $feed->title = $page->title.' – '.TypiCMS::title();
             $feed->description = $page->body;

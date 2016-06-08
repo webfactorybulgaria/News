@@ -11,6 +11,6 @@ class NewsTranslation extends BaseTranslation
      */
     public function owner()
     {
-        return $this->belongsTo('TypiCMS\Modules\News\Models\News', 'news_id');
+        return $this->belongsTo('TypiCMS\Modules\News\Models\News', 'news_id')->withoutGlobalScopes();
     }
 }
