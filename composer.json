@@ -10,7 +10,7 @@
     ],
     "require": {
         "roumen/feed": "~2.10",
-        "webfactorybulgaria/core": "~4.1.0"
+        "webfactorybulgaria/core": "dev-master"
     },
     "autoload": {
         "psr-4": {
