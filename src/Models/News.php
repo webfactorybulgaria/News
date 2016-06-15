@@ -55,4 +55,14 @@ class News extends Base
             ->orderBy('position')
             ->withTimestamps();
     }
+
+    /**
+     * Append thumb attribute.
+     *
+     * @return string
+     */
+    public function getThumbAttribute()
+    {
+        return $this->present()->thumbSrc(null, 22);
+    }
 }
