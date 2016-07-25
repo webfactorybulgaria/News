@@ -21,8 +21,6 @@ class AdminController extends BaseAdminController
      */
     public function index()
     {
-        $models = $this->repository->all([], true);
-        app('JavaScript')->put('models', $models);
 
         return view('news::admin.index');
     }
