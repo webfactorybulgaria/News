@@ -3,7 +3,7 @@
 namespace TypiCMS\Modules\News\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
-use TypiCMS\Modules\Core\Repositories\RepositoriesAbstract;
+use TypiCMS\Modules\Core\Custom\Repositories\RepositoriesAbstract;
 
 class EloquentNews extends RepositoriesAbstract implements NewsInterface
 {

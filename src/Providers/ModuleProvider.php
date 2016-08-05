@@ -5,14 +5,14 @@ namespace TypiCMS\Modules\News\Providers;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use TypiCMS\Modules\Core\Facades\TypiCMS;
-use TypiCMS\Modules\Core\Observers\FileObserver;
-use TypiCMS\Modules\Core\Observers\SlugObserver;
-use TypiCMS\Modules\Core\Services\Cache\LaravelCache;
-use TypiCMS\Modules\News\Models\News;
-use TypiCMS\Modules\News\Models\NewsTranslation;
-use TypiCMS\Modules\News\Repositories\CacheDecorator;
-use TypiCMS\Modules\News\Repositories\EloquentNews;
+use TypiCMS\Modules\Core\Custom\Facades\TypiCMS;
+use TypiCMS\Modules\Core\Custom\Observers\FileObserver;
+use TypiCMS\Modules\Core\Custom\Observers\SlugObserver;
+use TypiCMS\Modules\Core\Custom\Services\Cache\LaravelCache;
+use TypiCMS\Modules\News\Custom\Models\News;
+use TypiCMS\Modules\News\Custom\Models\NewsTranslation;
+use TypiCMS\Modules\News\Custom\Repositories\CacheDecorator;
+use TypiCMS\Modules\News\Custom\Repositories\EloquentNews;
 
 class ModuleProvider extends ServiceProvider
 {
@@ -37,7 +37,7 @@ class ModuleProvider extends ServiceProvider
 
         AliasLoader::getInstance()->alias(
             'News',
-            'TypiCMS\Modules\News\Facades\Facade'
+            'TypiCMS\Modules\News\Custom\Facades\Facade'
         );
 
         // Observers
@@ -54,12 +54,12 @@ class ModuleProvider extends ServiceProvider
         /*
          * Register route service provider
          */
-        $app->register('TypiCMS\Modules\News\Providers\RouteServiceProvider');
+        $app->register('TypiCMS\Modules\News\Custom\Providers\RouteServiceProvider');
 
         /*
          * Sidebar view composer
          */
-        $app->view->composer('core::admin._sidebar', 'TypiCMS\Modules\News\Composers\SidebarViewComposer');
+        $app->view->composer('core::admin._sidebar', 'TypiCMS\Modules\News\Custom\Composers\SidebarViewComposer');
 
         /*
          * Add the page in the view.
@@ -68,7 +68,7 @@ class ModuleProvider extends ServiceProvider
             $view->page = TypiCMS::getPageLinkedToModule('news');
         });
 
-        $app->bind('TypiCMS\Modules\News\Repositories\NewsInterface', function (Application $app) {
+        $app->bind('TypiCMS\Modules\News\Custom\Repositories\NewsInterface', function (Application $app) {
             $repository = new EloquentNews(new News());
             if (!config('typicms.cache')) {
                 return $repository;

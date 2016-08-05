@@ -5,9 +5,9 @@ namespace TypiCMS\Modules\News\Http\Controllers;
 use Illuminate\Pagination\LengthAwarePaginator as Paginator;
 use Illuminate\Support\Facades\Request;
 use Roumen\Feed\Feed;
-use TypiCMS\Modules\Core\Facades\TypiCMS;
-use TypiCMS\Modules\Core\Http\Controllers\BasePublicController;
-use TypiCMS\Modules\News\Repositories\NewsInterface;
+use TypiCMS\Modules\Core\Custom\Facades\TypiCMS;
+use TypiCMS\Modules\Core\Custom\Http\Controllers\BasePublicController;
+use TypiCMS\Modules\News\Custom\Repositories\NewsInterface;
 
 class PublicController extends BasePublicController
 {
