@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\News\Custom\Providers;
+namespace TypiCMS\Modules\News\Shells\Providers;
 
 use TypiCMS\Modules\News\Providers\RouteServiceProvider as Base;
 

@@ -3,9 +3,9 @@
 namespace TypiCMS\Modules\News\Http\Controllers;
 
 use Illuminate\Support\Facades\Request;
-use TypiCMS\Modules\Core\Custom\Http\Controllers\BaseApiController;
-use TypiCMS\Modules\News\Custom\Models\News;
-use TypiCMS\Modules\News\Custom\Repositories\NewsInterface as Repository;
+use TypiCMS\Modules\Core\Shells\Http\Controllers\BaseApiController;
+use TypiCMS\Modules\News\Shells\Models\News;
+use TypiCMS\Modules\News\Shells\Repositories\NewsInterface as Repository;
 
 class ApiController extends BaseApiController
 {
@@ -47,7 +47,7 @@ class ApiController extends BaseApiController
     /**
      * Remove the specified resource from storage.
      *
-     * @param \TypiCMS\Modules\News\Custom\Models\News $news
+     * @param \TypiCMS\Modules\News\Shells\Models\News $news
      *
      * @return \Illuminate\Http\JsonResponse
      */

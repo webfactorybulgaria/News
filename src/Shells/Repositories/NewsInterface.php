@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\News\Custom\Repositories;
+namespace TypiCMS\Modules\News\Shells\Repositories;
 
 use TypiCMS\Modules\News\Repositories\NewsInterface as Base;
 

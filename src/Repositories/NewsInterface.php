@@ -2,7 +2,7 @@
 
 namespace TypiCMS\Modules\News\Repositories;
 
-use TypiCMS\Modules\Core\Custom\Repositories\RepositoryInterface;
+use TypiCMS\Modules\Core\Shells\Repositories\RepositoryInterface;
 
 interface NewsInterface extends RepositoryInterface
 {

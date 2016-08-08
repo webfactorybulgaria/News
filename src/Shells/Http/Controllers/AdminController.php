@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\News\Custom\Http\Controllers;
+namespace TypiCMS\Modules\News\Shells\Http\Controllers;
 
 use TypiCMS\Modules\News\Http\Controllers\AdminController as Base;
 

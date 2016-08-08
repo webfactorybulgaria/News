@@ -2,7 +2,7 @@
 
 namespace TypiCMS\Modules\News\Models;
 
-use TypiCMS\Modules\Core\Custom\Models\BaseTranslation;
+use TypiCMS\Modules\Core\Shells\Models\BaseTranslation;
 
 class NewsTranslation extends BaseTranslation
 {
@@ -11,6 +11,6 @@ class NewsTranslation extends BaseTranslation
      */
     public function owner()
     {
-        return $this->belongsTo('TypiCMS\Modules\News\Custom\Models\News', 'news_id')->withoutGlobalScopes();
+        return $this->belongsTo('TypiCMS\Modules\News\Shells\Models\News', 'news_id')->withoutGlobalScopes();
     }
 }

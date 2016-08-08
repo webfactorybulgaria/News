@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\News\Custom\Models;
+namespace TypiCMS\Modules\News\Shells\Models;
 
 use TypiCMS\Modules\News\Models\News as Base;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\News\Custom\Http\Requests;
+namespace TypiCMS\Modules\News\Shells\Http\Requests;
 
 use TypiCMS\Modules\News\Http\Requests\FormRequest as Base;
 

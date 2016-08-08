@@ -1,6 +1,6 @@
 <?php
 
-namespace TypiCMS\Modules\News\Custom\Facades;
+namespace TypiCMS\Modules\News\Shells\Facades;
 
 use TypiCMS\Modules\News\Facades\Facade as Base;
 

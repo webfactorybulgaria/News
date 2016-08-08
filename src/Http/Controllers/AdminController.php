@@ -2,10 +2,10 @@
 
 namespace TypiCMS\Modules\News\Http\Controllers;
 
-use TypiCMS\Modules\Core\Custom\Http\Controllers\BaseAdminController;
-use TypiCMS\Modules\News\Custom\Http\Requests\FormRequest;
-use TypiCMS\Modules\News\Custom\Models\News;
-use TypiCMS\Modules\News\Custom\Repositories\NewsInterface;
+use TypiCMS\Modules\Core\Shells\Http\Controllers\BaseAdminController;
+use TypiCMS\Modules\News\Shells\Http\Requests\FormRequest;
+use TypiCMS\Modules\News\Shells\Models\News;
+use TypiCMS\Modules\News\Shells\Repositories\NewsInterface;
 
 class AdminController extends BaseAdminController
 {
@@ -41,7 +41,7 @@ class AdminController extends BaseAdminController
     /**
      * Edit form for the specified resource.
      *
-     * @param \TypiCMS\Modules\News\Custom\Models\News $news
+     * @param \TypiCMS\Modules\News\Shells\Models\News $news
      *
      * @return \Illuminate\View\View
      */
@@ -54,7 +54,7 @@ class AdminController extends BaseAdminController
     /**
      * Store a newly created resource in storage.
      *
-     * @param \TypiCMS\Modules\News\Custom\Http\Requests\FormRequest $request
+     * @param \TypiCMS\Modules\News\Shells\Http\Requests\FormRequest $request
      *
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -68,8 +68,8 @@ class AdminController extends BaseAdminController
     /**
      * Update the specified resource in storage.
      *
-     * @param \TypiCMS\Modules\News\Custom\Models\News               $news
-     * @param \TypiCMS\Modules\News\Custom\Http\Requests\FormRequest $request
+     * @param \TypiCMS\Modules\News\Shells\Models\News               $news
+     * @param \TypiCMS\Modules\News\Shells\Http\Requests\FormRequest $request
      *
      * @return \Illuminate\Http\RedirectResponse
      */
