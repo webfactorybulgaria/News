@@ -2,9 +2,9 @@
 
 namespace TypiCMS\Modules\News\Shells\Models;
 
-use TypiCMS\Modules\News\Models\NewsTranslation as Base;
+use TypiCMS\Modules\News\Models\NewsTranslation as BaseClass;
 
-class NewsTranslation extends Base
+class NewsTranslation extends BaseClass
 {
 
 }

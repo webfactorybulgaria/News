@@ -2,9 +2,9 @@
 
 namespace TypiCMS\Modules\News\Shells\Repositories;
 
-use TypiCMS\Modules\News\Repositories\EloquentNews as Base;
+use TypiCMS\Modules\News\Repositories\EloquentNews as BaseClass;
 
-class EloquentNews extends Base implements NewsInterface
+class EloquentNews extends BaseClass implements NewsInterface
 {
 
 }

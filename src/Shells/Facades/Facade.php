@@ -2,9 +2,9 @@
 
 namespace TypiCMS\Modules\News\Shells\Facades;
 
-use TypiCMS\Modules\News\Facades\Facade as Base;
+use TypiCMS\Modules\News\Facades\Facade as BaseClass;
 
-class Facade extends Base
+class Facade extends BaseClass
 {
 
 }

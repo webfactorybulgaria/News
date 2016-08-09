@@ -2,9 +2,9 @@
 
 namespace TypiCMS\Modules\News\Shells\Repositories;
 
-use TypiCMS\Modules\News\Repositories\CacheDecorator as Base;
+use TypiCMS\Modules\News\Repositories\CacheDecorator as BaseClass;
 
-class CacheDecorator extends Base implements NewsInterface
+class CacheDecorator extends BaseClass implements NewsInterface
 {
 
 }

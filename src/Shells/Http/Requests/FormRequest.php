@@ -2,9 +2,9 @@
 
 namespace TypiCMS\Modules\News\Shells\Http\Requests;
 
-use TypiCMS\Modules\News\Http\Requests\FormRequest as Base;
+use TypiCMS\Modules\News\Http\Requests\FormRequest as BaseClass;
 
-class FormRequest extends Base
+class FormRequest extends BaseClass
 {
 
 }
