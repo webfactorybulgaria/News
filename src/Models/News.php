@@ -2,10 +2,10 @@
 
 namespace TypiCMS\Modules\News\Models;
 
-use TypiCMS\Modules\Core\Traits\Translatable;
+use TypiCMS\Modules\Core\Shells\Traits\Translatable;
 use Laracasts\Presenter\PresentableTrait;
-use TypiCMS\Modules\Core\Models\Base;
-use TypiCMS\Modules\History\Traits\Historable;
+use TypiCMS\Modules\Core\Shells\Models\Base;
+use TypiCMS\Modules\History\Shells\Traits\Historable;
 
 class News extends Base
 {
@@ -13,7 +13,7 @@ class News extends Base
     use Translatable;
     use PresentableTrait;
 
-    protected $presenter = 'TypiCMS\Modules\News\Presenters\ModulePresenter';
+    protected $presenter = 'TypiCMS\Modules\News\Shells\Presenters\ModulePresenter';
 
     protected $dates = ['date'];
 
@@ -50,7 +50,7 @@ class News extends Base
      */
     public function galleries()
     {
-        return $this->morphToMany('TypiCMS\Modules\Galleries\Models\Gallery', 'galleryable')
+        return $this->morphToMany('TypiCMS\Modules\Galleries\Shells\Models\Gallery', 'galleryable')
             ->withPivot('position')
             ->orderBy('position')
             ->withTimestamps();
