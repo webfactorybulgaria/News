@@ -4,14 +4,15 @@
 
 @section('main')
 
-    {!! $page->present()->body !!}
+    <div class="container">
+        {!! $page->present()->body !!}
 
-    @include('galleries::public._galleries', ['model' => $page])
+        @include('galleries::public._galleries', ['model' => $page])
 
-    @if ($models->count())
-    @include('news::public._list', ['items' => $models])
-    @endif
-
+        @if ($models->count())
+        @include('news::public._list', ['items' => $models, 'custom_class' => 'news-list-all'])
+        @endif
     {!! $models->appends(Request::except('page'))->render() !!}
+    </div>
 
 @endsection
